@@ -1,10 +1,16 @@
 # cross-domain
 跨域解决方案
+
 1.JSONP跨域解决方案
+
 2.CORS跨域资源共享
+
 3.基于http proxy实现跨域请求
+
 4.基于post message实现跨域处理
+
 5.基于iframe的跨域解决方案：window.name/document.domin/localion.hash
+
 6.Web scoket和nginx反向代理
 
 1.JSONP
