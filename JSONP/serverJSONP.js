@@ -9,7 +9,7 @@ app.get('/list',(req, res) =>{
     } = req.query;
     let data = {
         code: 0,
-        message:'JSON 请求数据'
+        message:'JSONP 请求数据'
     };
     res.send(`${callback}(${JSON.stringify(data)})`);
 });
