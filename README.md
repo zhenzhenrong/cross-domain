@@ -53,3 +53,5 @@ Access-Control-Allow-Origin: http://localhost:3001  //该字段表明可供那�
 Access-Control-Allow-Methods: GET, POST, PUT        // 该字段表明服务端支持的请求方法
 
 Access-Control-Allow-Headers: X-Custom-Header       // 实际请求将携带的自定义请求首部字段
+
+注：Access-Control-Allow-Origin 可以写具体地址与*，如写具体地址，只能写一个，如写*表明支持多源
