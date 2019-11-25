@@ -13,7 +13,7 @@
 6.Web scoket和nginx反向代理
 
 
-JSONP
+JSONP跨域解决方案
 
 一 不存在跨域请求的限制的标签
 
@@ -28,3 +28,5 @@ Script、img、link、iframe...
 2.安全问题(请求代码中可能存在安全隐患)
 
 3.要确定jsonp请求是否失败并不容易
+
+CORS跨域资源共享
