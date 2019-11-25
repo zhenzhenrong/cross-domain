@@ -31,20 +31,25 @@ Script、img、link、iframe...
 
 CORS跨域资源共享
 
+CORS分为简单请求和非简单请求(需预检请求)两类
+
+1 简单请求
+请求方式使用下列方法之一：
+GET
+HEAD
+POST
+ 
+Content-Type 的值仅限于下列三者之一：
+text/plain
+multipart/form-data
+application/x-www-form-urlencoded
+
+
+
 CORS字段介绍：
 
-（1）Access-Control-Allow-Methods
+Access-Control-Allow-Origin: http://localhost:3001  //该字段表明可供那个源跨域
 
-该字段必需，它的值是逗号分隔的一个字符串，表明服务器支持的所有跨域请求的方法。注意，返回的是所有支持的方法，而不单是浏览器请求的那个方法。这是为了避免多次"预检"请求。
+Access-Control-Allow-Methods: GET, POST, PUT        // 该字段表明服务端支持的请求方法
 
-（2）Access-Control-Allow-Headers
-
-如果浏览器请求包括Access-Control-Request-Headers字段，则Access-Control-Allow-Headers字段是必需的。它也是一个逗号分隔的字符串，表明服务器支持的所有头信息字段，不限于浏览器在"预检"中请求的字段。
-
-（3）Access-Control-Allow-Credentials
-
-该字段与简单请求时的含义相同。
-
-（4）Access-Control-Max-Age
-
-该字段可选，用来指定本次预检请求的有效期，单位为秒。上面结果中，有效期是20天（1728000秒），即允许缓存该条回应1728000秒（即20天），在此期间，不用发出另一条预检请求。
+Access-Control-Allow-Headers: X-Custom-Header       // 实际请求将携带的自定义请求首部字段
