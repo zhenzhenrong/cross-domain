@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //监听A发送来的请求
+    window.onmessage = function (ev) {
+       console.log(ev) ;
+       //ev.source：A
+        ev.source.postMessage(ev.data+',B页面处理', ev.origin);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<iframe id="iframe" src="http://127.0.0.1:1002/B.html"></iframe>
+<script>
+    let count = 0;
+    let iframe = document.getElementById('iframe');
+    iframe.onload = function () {
+        if(count === 0){
+            //把地址指向同源的C
+            iframe.src = 'http://127.0.0.1:1001/C.html';
+            count++;
+            return;
+        }
+        console.log(iframe.contentWindow.name);
+    }
+</script>
+</body>
+</html>

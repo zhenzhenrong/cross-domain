@@ -10,10 +10,8 @@
 
 5.基于iframe的跨域解决方案：window.name/document.domin/localion.hash
 
-6.Web scoket和nginx反向代理
 
-
-JSONP跨域解决方案
+**JSONP跨域解决方案**
 
 一 不存在跨域请求的限制的标签
 
@@ -29,7 +27,7 @@ Script、img、link、iframe...
 
 3.要确定jsonp请求是否失败并不容易
 
-CORS跨域资源共享
+**CORS跨域资源共享**
 
 CORS分为简单请求和非简单请求(需预检请求)两类
 
@@ -56,6 +54,12 @@ Access-Control-Allow-Headers: X-Custom-Header       // 实际请求将携带的�
 
 注：Access-Control-Allow-Origin 可以写具体地址与*，如写具体地址，只能写一个，如写*表明支持多源
 
-基于http proxy实现跨域请求
+**基于http proxy实现跨域请求**
+**基于post message实现跨域处理**
+**基于iframe的跨域解决方案：window.name/document.domin/localion.hash**
+
+document.domin
+
+只能实现：同一个主域，不同子域之间的操作
 
 

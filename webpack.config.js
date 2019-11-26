@@ -9,16 +9,16 @@ module.exports = {
         publicPath: '/dist/', // 通过devServer访问路径
         filename: 'build.js' // 打包后的文件名
     },
-    devServer: {
-        progress:true,
-        contentBase:'./dist',
-        proxy:{
-            '/':{
-                target:'http://127.0.0.1:8001',
-                changeOrigin:true
-            }
-        }
-    },
+    // devServer: {
+    //     progress:true,
+    //     contentBase:'./dist',
+    //     proxy:{
+    //         '/':{
+    //             target:'http://127.0.0.1:8001',
+    //             changeOrigin:true
+    //         }
+    //     }
+    // },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/index.html",

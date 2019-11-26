@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //监听B传来的hash值
+    let iframe = document.getElementById('iframe');
+    window.onhashchange = function () {
+        //再通过操作同作用域的A的js回调，将结果传回
+        window.parent.parent.func(location.hash);
+    }
+</script>
+</body>
+</html>
