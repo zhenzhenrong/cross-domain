@@ -40,7 +40,7 @@ Access-Control-Allow-Headers: X-Custom-Header`// 实际请求将携带的自定�
 <br>
 **基于post message实现跨域处理**
 <br>
-**基于iframe的跨域解决方案：`window.name/document.domin/localion.hash**`
+**基于iframe的跨域解决方案：`window.name/document.domin/localion.hash`**
 <br><br>
 document.domin<br>
 只能实现：同一个主域，不同子域之间的操作
